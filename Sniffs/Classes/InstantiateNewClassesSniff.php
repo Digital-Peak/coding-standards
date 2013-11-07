@@ -39,6 +39,8 @@ class Joomla_Sniffs_Classes_InstantiateNewClassesSniff implements PHP_CodeSniffe
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
+    	// Not neccessary for Digital Peak
+    	return;
         $tokens = $phpcsFile->getTokens();
 
         $running = true;

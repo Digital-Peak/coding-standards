@@ -91,11 +91,14 @@ class Joomla_Sniffs_ControlStructures_WhiteSpaceBeforeSniff implements PHP_CodeS
 
 		if ($tokens[$stackPtr]['line'] - 1 == $tokens[$previousSemicolon]['line'])
 		{
+			/*
+			 Not neccessary for Digital Peak
 			$error = sprintf('Please consider an empty line before the %s statement;',
 				$tokens[$stackPtr]['content']
 			);
 
 			$phpcsFile->addError($error, $stackPtr, 'SpaceBefore');
+			*/
 
 			return;
 		}

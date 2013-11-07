@@ -142,6 +142,8 @@ class Joomla_Sniffs_Commenting_ClassCommentSniff extends Joomla_Sniffs_Commentin
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
+    	// Not neccessary for Digital Peak
+    	return;
         $this->currentFile = $phpcsFile;
 
         $tokens    = $phpcsFile->getTokens();

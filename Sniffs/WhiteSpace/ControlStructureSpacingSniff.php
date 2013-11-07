@@ -82,11 +82,14 @@ class Joomla_Sniffs_WhiteSpace_ControlStructureSpacingSniff implements PHP_CodeS
 
 		$firstContent = $phpcsFile->findNext(T_WHITESPACE, ($scopeOpener + 1), null, true);
 
+		/*
+		 Not neccessary for Digital Peak
 		if ($tokens[$firstContent]['line'] !== ($tokens[$scopeOpener]['line'] + 1))
 		{
 			$error = 'Blank line found at start of control structure';
 			$phpcsFile->addError($error, $scopeOpener);
 		}
+		*/
 
 		$lastContent = $phpcsFile->findPrevious(T_WHITESPACE, ($scopeCloser - 1), null, true);
 
@@ -175,6 +178,9 @@ class Joomla_Sniffs_WhiteSpace_ControlStructureSpacingSniff implements PHP_CodeS
 		}
 		else
 		{
+		
+			/*
+		 	Not neccessary for Digital Peak
 			if ($tokens[$trailingContent]['line'] === ($tokens[$scopeCloser]['line'] + 1))
 			{
 				// T_ELSE
@@ -188,6 +194,7 @@ class Joomla_Sniffs_WhiteSpace_ControlStructureSpacingSniff implements PHP_CodeS
 					$phpcsFile->addError($error, $scopeCloser);
 				}
 			}
+			*/
 		}
 	}
 }

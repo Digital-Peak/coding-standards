@@ -107,6 +107,9 @@ class Joomla_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_S
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
+    	// Not neccessary for Digital Peak
+    	return;
+    	
         $find = array(
                  T_COMMENT,
                  T_DOC_COMMENT,

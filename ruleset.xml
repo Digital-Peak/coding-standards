@@ -35,7 +35,6 @@
 	<rule ref="PEAR.Classes.ClassDeclaration" />
 	<rule ref="PEAR.Commenting.InlineComment" />
 	<rule ref="PEAR.Formatting.MultiLineAssignment" />
-	<rule ref="PEAR.Functions.ValidDefaultValue" />
 	<rule ref="PEAR.NamingConventions.ValidClassName" />
 
 	<!-- Include some additional sniffs from the Squiz standard -->
@@ -51,7 +50,6 @@
 		<exclude name="Squiz.Operators.IncrementDecrementUsage.processAssignment" />
 	</rule>
 	<rule ref="Squiz.Scope.StaticThisUsage" />
-	<rule ref="Squiz.WhiteSpace.ScopeClosingBrace" />
 
 	<!-- Include some additional sniffs from the Zend standard -->
 	<rule ref="Zend.Files.ClosingTag" />

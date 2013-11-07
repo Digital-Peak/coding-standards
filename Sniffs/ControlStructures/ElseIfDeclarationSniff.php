@@ -56,6 +56,10 @@ class Joomla_Sniffs_ControlStructures_ElseIfDeclarationSniff implements PHP_Code
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
+    	
+      // Not neccessary for Digital Peak
+      return;
+    	
       $tokens = $phpcsFile->getTokens();
 
       $nextNonWhiteSpace = $phpcsFile->findNext(
