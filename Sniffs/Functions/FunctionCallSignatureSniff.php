@@ -234,6 +234,8 @@ class Joomla_Sniffs_Functions_FunctionCallSignatureSniff implements PHP_CodeSnif
             }
         }//end for
 
+        /*
+         Not possible with the Eclipse formater
         if ($tokens[($openBracket + 1)]['content'] !== $phpcsFile->eolChar
         && T_CONSTANT_ENCAPSED_STRING != $tokens[($openBracket + 1)]['code'])// allow a '"'
         {
@@ -249,6 +251,7 @@ class Joomla_Sniffs_Functions_FunctionCallSignatureSniff implements PHP_CodeSnif
             $error = 'Closing parenthesis of a multi-line function call must be on a line by itself';
             $phpcsFile->addError($error, $closeBracket, 'CloseBracketLine');
         }
+        */
 
     }//end processMultiLineCall()
 

@@ -76,7 +76,12 @@ class Joomla_Sniffs_WhiteSpace_DisallowSpaceIndentSniff implements PHP_CodeSniff
 
         if (strpos($tokens[$stackPtr]['content'], " ") !== false) {
             $error = 'Tabs must be used to indent lines; spaces are not allowed';
+            
+            /*
+             The Eclipse formater puts a space when he creates a new line
+             on multi line calls
             $phpcsFile->addError($error, $stackPtr, 'SpaceUsed');
+			*/
         }
 
     }//end process()
